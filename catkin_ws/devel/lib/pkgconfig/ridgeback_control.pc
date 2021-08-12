@@ -1,0 +1,8 @@
+prefix=/home/wisdom/catkin_ws/devel
+
+Name: ridgeback_control
+Description: Description of ridgeback_control
+Version: 0.1.10
+Cflags: -I/home/wisdom/catkin_ws/src/ridgeback/ridgeback_control/include
+Libs: -L/home/wisdom/catkin_ws/devel/lib -lmecanum_drive_controller
+Requires: controller_interface realtime_tools

@@ -1,0 +1,19 @@
+# Connecting the 2 finger gripper via USB
+# Check out the page below for the official documentation for the smodel and TCP protocol
+http://wiki.ros.org/robotiq/Tutorials/Control%20of%20an%20S-Model%20Gripper%20using%20the%20Modbus%20TCP%20Protocol
+
+# Check for the connection port using (usually ttyUSB0) :
+dmesg | grep tty
+#Configure the serial port to avoid permission denied errors by adding yourself to the dialout group as follows:
+usermod -a -G dialout YOURUSERNAME
+# Restart the PC (logout and then login)
+
+Option 1 - Use the modbus RTU commands directly ! as in the gripper.py script
+Option 2 - Run the ROS package provided by robotiq
+
+roscore
+rosrun robotiq_c_model_control CModelRtuNode.py ttyUSB0 # This brings up the relevant topics
+rosrun robotiq_c_model_control CModelSimpleController.py # Follow the commands to play with the gripper
+
+# You can the move the gripper through a script by using the right command and publishing to the
+# right topic as seen in the simplecontroller

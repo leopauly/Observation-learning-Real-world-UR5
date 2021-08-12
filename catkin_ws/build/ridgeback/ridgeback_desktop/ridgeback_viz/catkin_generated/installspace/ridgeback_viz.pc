@@ -1,0 +1,8 @@
+prefix=/home/wisdom/catkin_ws/install
+
+Name: ridgeback_viz
+Description: Description of ridgeback_viz
+Version: 0.1.1
+Cflags: 
+Libs: -L/home/wisdom/catkin_ws/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/wisdom/catkin_ws/devel
+
+Name: ridgeback_msgs
+Description: Description of ridgeback_msgs
+Version: 0.1.10
+Cflags: -I/home/wisdom/catkin_ws/devel/include
+Libs: -L/home/wisdom/catkin_ws/devel/lib 
+Requires: std_msgs message_runtime

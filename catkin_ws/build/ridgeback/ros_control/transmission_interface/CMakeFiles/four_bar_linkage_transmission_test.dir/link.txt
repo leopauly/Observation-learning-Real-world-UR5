@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/four_bar_linkage_transmission_test.dir/test/four_bar_linkage_transmission_test.cpp.o  -o /home/wisdom/catkin_ws/devel/lib/transmission_interface/four_bar_linkage_transmission_test  -L/home/wisdom/catkin_ws/build/gtest -rdynamic ../../../gtest/libgtest.so -lboost_system -lboost_thread -lpthread -lpthread -Wl,-rpath,/home/wisdom/catkin_ws/build/gtest 
